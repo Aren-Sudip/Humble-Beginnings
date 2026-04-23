@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selectors</title>
+  <style>
+    input[type="email"]{
+      background: red;
+      border: none;
+      color: white;
+      
+    }
+    input[checked]{
+      background:green;
+      outline:2px solid black;
+
+    }
+    input:focus{
+      background:pink;
+      border:2px solid black;
+    }
+div{
+  width:200px;
+  height:200px;
+  background:skyblue;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div:hover{
+background-color: greenyellow;
+border:blue;
+
+
+}
+div:active{
+  background:red;
+  border:pink;
+
+}
+
+li:nth-child(1){
+  background-color: pink;
+
+}
+li:nth-child(2){
+  background:green;
+  
+}
+li:last-child{
+  background:red;
+
+}
+/* a[href="www.g"]{
+  color:red;
+}
+a[href$="e.com"]{
+  color:pink;
+} */
+ a[href*="google"]{
+  color:red;
+  background-color: greenyellow;
+ }
+
+ input::placeholder{
+  color: red;
+ }
+  </style>
+</head>
+<body>
+  <input type="text" placeholder="Enter Your Name">
+  <br>
+  <br>
+  <input type="email" placeholder="Email please">
+  <br>
+  <br>
+  <input type="checkbox" checked>
+  <input type="text" disabled>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div>
+    I am a box.
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <ul>
+    <li class="first">First</li>
+    <li class="second">Second</li>
+    <li class="third">Third</li>
+    <li class="fourth">Fourth</li>
+  </ul>
+
+  <a href="www.google.com">Gyoooooogle</a>
+</body>
+</html>

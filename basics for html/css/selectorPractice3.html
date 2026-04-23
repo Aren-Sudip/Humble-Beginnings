@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Child selectors</title>
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+     <style>
+      body {   
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background: url(https://habsida-lms.s3.ap-northeast-2.amazonaws.com/webcore/shooter.jpg) no-repeat 0 0;
+    background-size: auto;
+    min-height: auto;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+.places {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 0;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin-bottom: 5px;
+    padding: 5px 10px;
+}
+
+ul ul {
+    margin-left: 150px;
+    font-size: 0.8em;
+}
+
+/* Add your code below the comment */
+.places > li {
+  border-bottom: 2px solid #ccc;
+}
+
+.places > li >span {
+  font-weight: bold;
+}
+
+
+     </style>
+  </head>
+  <body>
+    <h1>Summary</h1>
+    <ul class="places">
+      <li>
+        <span>Ustyugov</span>
+        <ul>
+          <li>
+            <span>0 free kicks</span>
+          </li>
+          <li>
+            <span>0 spare</span>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <span>Tcherezov</span>
+        <ul>
+          <li>
+            <span>0 free kicks</span>
+          </li>
+          <li>
+            <span>2 spare</span>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <span>Bjoerndalen</span>
+        <ul>
+          <li>
+            <span>1 free kicks</span>
+          </li>
+          <li>
+            <span>4 spare</span>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>

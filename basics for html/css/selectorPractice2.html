@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tag selectors</title>
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+     <style>
+      body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background: url(https://habsida-lms.s3.ap-northeast-2.amazonaws.com/webcore/shooter.jpg) no-repeat 0 0;
+  background-size: auto;
+  min-height: auto;
+}
+
+.shooter-1 .target {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  display: flex;
+  justify-content: space-around;
+  width: 135px;
+  height: 30px;
+  margin: 0;
+  padding: 5px 5px;
+  list-style: none;
+  background: white;
+  border-radius: 2px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  transform: scale(1.2);
+  align-items: center;
+}
+
+.shooter-2 .target {
+  position: absolute;
+  top: 120px;
+  right: 50px;
+  display: flex;
+  justify-content: space-around;
+  width: 135px;
+  height: 30px;
+  margin: 0;
+  padding: 5px 5px;
+  list-style: none;
+  background: white;
+  border-radius: 2px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  transform: scale(1.2);
+  align-items: center;
+}
+
+li {
+  width: 13px;
+  height: 13px;
+  font-size: 0;
+  background-color: #333333;
+  border: 1px solid #333333;
+  border-radius: 50%;
+  margin: 0;
+}
+
+/* Add your code below the comment */
+/* Contextual Selectors exercise*/
+.shooter-1 .first,
+.shooter-1 .third,
+.shooter-1 .fourth,
+.shooter-2 .second,
+.shooter-2 .third,
+.shooter-2 .fourth,
+.shooter-2 .fifth {
+background-color: white;
+}
+
+.shooter-1 .second,
+.shooter-1 .fifth, 
+.shooter-2 .first {
+background-color: red;
+}
+     </style>
+  </head>
+  <body>
+    <div class="shooter-1">
+      <ul class="target">
+        <li class="first">1</li>
+        <li class="second">2</li>
+        <li class="third">3</li>
+        <li class="fourth">4</li>
+        <li class="fifth">5</li>
+      </ul>
+    </div>
+    <div class="shooter-2">
+      <ul class="target">
+        <li class="first">1</li>
+        <li class="second">2</li>
+        <li class="third">3</li>
+        <li class="fourth">4</li>
+        <li class="fifth">5</li>
+      </ul>
+    </div>
+  </body>
+</html>

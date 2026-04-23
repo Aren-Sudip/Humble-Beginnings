@@ -1,0 +1,62 @@
+:root {
+  --dark: black;
+  --light: hotpink;
+  --bloody: red;
+  --charming: skyblue;
+  --granary: rgb(90, 236, 90);
+}
+/* h1 {
+  color: var(--charming);
+  font-size: 2rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+p {
+  color: var(--granary);
+  font-size:1.4rem;
+  background-color: var(--dark);
+  text-align: center;
+}
+
+span {
+  color: var(--bloody);
+  font-size: 1.9em;
+  font-style: italic;
+  font-weight: bold;
+text-decoration: line-through;
+
+
+}
+div {
+  color: var(--light);
+
+}
+ul>li{
+  background-color: var(--granary);
+}
+li + li{
+  background-color: var(--dark);
+}
+p+p{
+  background-color: var(--bloody);
+}
+p ~p{
+background-color: var(--charming);
+} */
+ p.box{
+  background-color: var(--light);
+
+ }
+ div.box{
+  background-color: var(--granary);
+ }
+ 
+.container.general.me{
+  background-color: var(--dark);
+}
+
+.parent {
+  /* background-color: var(--bloody); */
+}
+.parent .child{
+  background-color: var(--granary);
+}
