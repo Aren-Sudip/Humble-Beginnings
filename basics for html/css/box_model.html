@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>boxModel</title>
+    <style>
+      .inline {
+        display: inline;
+        border: 2px solid green;
+        background-color: lightgreen;
+      }
+      .inlineBlock {
+        display: inline-block;
+        border: 2px solid blue;
+        background-color: lightskyblue;
+        width: 200px;
+        height: 100px;
+        margin: 10px;
+        padding: 10px;
+      }
+      .none {
+        display: none;
+        border: 2px solid blue;
+        background-color: lightskyblue;
+        width: 200px;
+        height: 100px;
+        margin: 10px;
+        padding: 10px;
+      }
+      .block {
+        display: block;
+        border: 2px solid blue;
+        background-color: lightskyblue;
+        width: 200px;
+        height: 100px;
+        margin: 10px;
+        padding: 10px;
+      }
+      .flex {
+        display: flex;
+        border: 2px solid blue;
+        background-color: lightskyblue;
+        width: 200px;
+        height: 100px;
+        margin: 10px;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+      }
+      .inlineFlex{
+           display: inline-flex;
+        border: 2px solid blue;
+        background-color: lightskyblue;
+        width: 200px;
+        height: 100px;
+        margin: 10px;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="inline">This is an inline div 1</div>
+      <div class="inline">This is an inline div 2</div>
+    </div>
+    <div>
+      <div class="inlineBlock">This is an inlineBlock div 1</div>
+      <div class="inlineBlock">This is an inlineBlock div 2</div>
+    </div>
+    <div>
+      <div class="none">This is an none div 1</div>
+      <div class="none">This is an none div 2</div>
+    </div>
+    <div>
+      <div class="block">This is an block div 1</div>
+      <div class="block">This is an block div 2</div>
+    </div>
+    <div>
+      <div class="flex">This is an flex div 1</div>
+      <div class="flex">This is an flex div 2</div>
+    </div>
+    <div>
+      <div class="inlineFlex">This is an inlineFlex div 1</div>
+      <div class="inlineFlex">This is an inlineFlex div 2</div>
+    </div>
+  </body>
+</html>
