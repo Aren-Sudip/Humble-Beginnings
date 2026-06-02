@@ -1,0 +1,94 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+section{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start ;
+  align-items: flex-start;
+
+  height: 100vh;
+}
+
+.static-1{
+position: static;
+left: 100px;
+background-color: lightblue;
+width: 200px;
+height: 100px;
+}
+.relative-1{
+  position: relative;
+  top:10px;
+left: 100px;
+background-color: lightcoral;
+width: 200px;
+height: 100px;
+z-index: 1;
+}
+.relative-2{
+    position: relative;
+  top:-30px;
+left: 100px;
+background-color: lightgreen;
+width: 200px;
+height: 100px;
+z-index: 2;
+}
+.relative-3{
+    position: relative;
+  top:-60px;
+left: 100px;
+background-color: rgb(220, 16, 47);
+width: 200px;
+height: 100px;
+z-index: 3;
+}
+
+
+
+.absolute-1{
+    position: absolute;
+  bottom:0;
+left: 0;
+background-color: rgb(220, 183, 16);
+width: 200px;
+height: 100px;
+z-index: -2;
+
+}
+.absolute-2{
+    position: absolute;
+  top:20px;
+right: 0;
+background-color: rgb(16, 220, 189);
+width: 200px;
+height: 100px;
+z-index: -1;
+}
+.fixed-1{
+  position: fixed;
+  top:300px;
+right: 600px;
+background-color: rgb(72, 5, 255);
+width: 200px;
+height: 100px;
+z-index: 3;
+}
+.sticky-position{
+width: 50vw;
+height: 1400px;
+background-color: rgb(255, 105, 105);
+}
+
+.sticky-1{
+  position:sticky;
+  width: 40px;
+height: 40px;
+border-radius: 50%;
+top: 10px;
+background-color: rgb(15, 0, 153);
+}
