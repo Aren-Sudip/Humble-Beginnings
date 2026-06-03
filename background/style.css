@@ -78,7 +78,7 @@ background-repeat: no-repeat;
 background-color: black;
 background-position: center;
 background-size: cover; */
- background: black url('https://habsida-lms.s3.ap-northeast-2.amazonaws.com/webcore/logo.svg') center repeat;
+ background: black url('https://habsida-lms.s3.ap-northeast-2.amazonaws.com/webcore/logo.svg') center/cover repeat;
 
   color: rgb(12, 207, 25);
    border-radius: 10px;
