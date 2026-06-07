@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+body{
+  padding: 20px;
+}
+.parent-container{
+
+  max-width: 80%;
+margin: auto;
+border: 2px solid blue;
+}
+.main-section{
+  margin-bottom: 20px;
+}
+.main-section__title{
+  text-align: center;
+  color: #667eea
+}
+.example-row{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+}
+.example-box{
+  width: 200px;
+  height: 150px;
+  background-color: #667eea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+}
+.shadow-basic{
+  box-shadow: 5px 10px 10px blueviolet ;
+}
+.shadow-blur{
+  box-shadow: 10px 10px 30px blueviolet ;
+}
+
+.shadow-multiple{
+  box-shadow: 0px 20px 20px blueviolet, 20px 0px 20px rgb(8, 241, 8), -20px -0px 20px red, 0px -20px 20px rgb(10, 21, 240) ;
+}
+.shadow-basic-text{
+text-shadow: 5px 5px  2px white;
+  
+}
+.shadow-glow-text{
+text-shadow: 0px 0px  5px rgb(185, 0, 0)
+,0px 0px  5px rgb(16, 255, 183),0px 0px  5px rgb(8, 62, 240),0px 0px  5px rgb(218, 0, 196),0px 0px  5px rgb(71, 232, 22),0px 0px  5px rgb(194, 236, 8),0px 0px  5px rgb(255, 11, 97);
+  
+}
+.border-radius{
+  border-radius: 50% 0px 50% 10px;
+}
+.border-image{
+  border: 10px solid;
+  border-image: linear-gradient(45deg , rgb(255, 0, 128) , rgb(3, 209, 255)) 1;
+
+}
+.outline{
+outline: 10px solid red;
+border: 2px solid blue;
+outline-offset: 10px;
+}
+.blur-filter{
+  /* filter: blur(3px); */
+  backdrop-filter: blur(10px);
+}
+
+
+.linear-gradient{
+  background-image: linear-gradient(120deg ,red , blue );
+}
+.radial-gradient{
+  background-image: repeating-linear-gradient(to top right , red, red 10px , blue 10px , blue 20px );
+}
