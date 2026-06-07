@@ -1,0 +1,128 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+body{
+  padding: 20px;
+}
+.parent-container{
+
+  max-width: 40%;
+margin: auto;
+border: 2px solid blue;
+}
+.main-section{
+  margin-bottom: 20px;
+}
+.main-section__title{
+  text-align: center;
+  color: #667eea
+}
+.example-row{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: 16px;
+
+}
+.example-box{
+  width: 200px;
+  height: 100px;
+  border-radius: 10px;
+  background: linear-gradient( 45deg , rgb(9, 128, 255) , rgb(22, 213, 22));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+}
+
+.transition-basic{
+   transition: all 1s ease-in-out;
+}
+.transition-basic:hover{
+   background: linear-gradient(45deg, green , red);
+   transform: scale(1.5) rotate(360deg);
+}
+.transition-delay{
+   transition: all 1s ease-in-out 1s;
+}
+.transition-delay:hover{
+   background: linear-gradient(45deg, green , red);
+   transform: scale(1.5) rotate(360deg);
+}
+.transition-timing{
+   transition: all 2s linear;
+}
+.transition-timing:hover{
+   background: linear-gradient(45deg, green , red);
+   transform: scale(1.5) rotate(145deg);
+}
+
+.animation-bounce{
+  animation: bounce 1s  ease-in-out infinite;
+
+}
+@keyframes bounce {
+  0%{
+    transform:  translateY(0deg);
+  }
+  50%{
+    transform:  translateY(-20px) ;
+  }
+  100%{
+    transform: translateY(0deg)
+  }
+  
+}
+.animation-pulse{
+  animation: pulse 1.5s infinite;
+
+}
+@keyframes pulse {
+  0%,100%{
+    transform:  scale(1);
+  }
+  50%{
+    transform: scale(1.1);
+  }
+  
+  
+}
+.animation-spin{
+  animation: spin 3s linear infinite ;
+
+}
+@keyframes spin {
+  0%{
+    transform: rotate(0deg);
+  }
+
+  100%{
+    transform: rotate(360deg);
+  }
+  
+}
+
+.opacity-transition{
+  transition: opacity 0.9s ease-in-out;
+}
+.opacity-transition:hover{
+opacity: 0.1 ;
+}
+.color-transition{
+  transition: color 2s ease-in-out;
+}
+.color-transition:hover{
+  color: red;
+   
+}
+.size-transition{
+  transition: font-size 2s linear;
+
+}
+.size-transition:hover{
+  font-size: 2em;
+}
