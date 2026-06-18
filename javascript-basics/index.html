@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basics JavaScript</title>
+    
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="sudip">Mr.me</h1>
+    <button id="title-changer" onclick="changeName()">Name Change</button>
+
+    <hr />
+    <button class="click-me">Click Me</button>
+
+
+    <hr>
+    <button class="keydown-action"> CanvaS</button>
+
+    <hr>
+    <br>
+    <label for="input-box">Here : </label>
+    <input id="input-box" type="text" placeholder="     Enter your Name ">
+    <button class="submit">Submit</button>
+
+
+
+
+    <hr>
+    <br>
+    <br>
+    <hr>
+
+
+    <div id="container" ></div>
+<button  id="changeColor" > changeColor</button>
+<!-- <div id="box" style="width: 100px; height: 100px; background: blue;"></div>
+<button id="changeColor">Change Color</button>
+ -->
+
+<hr>
+
+<div class="box"> me box</div>
+    <script>
+     
+      const button = document.querySelector(".click-me");
+      button.addEventListener('click', function () {
+        alert('button toggled over @!!!');
+      });
+
+
+      button.addEventListener("mouseover",function () {
+        button.style.background = "blue"; 
+      
+      })
+      button.addEventListener("mouseout",function () {
+        button.style.background = "lightgreen"; 
+      
+      })
+      const canvas = document.querySelector(".keydown-action");
+      
+      canvas.addEventListener('keydown', function (changeCanvas) {
+        console.log('key pressed:', changeCanvas.key)
+        if (changeCanvas.key==="Enter"){alert('Quick Canvas is changed @!!!$ ');}})
+
+        // input.addEventListener('input',function (receiving) {
+        //   console.log('Typed: ', receiving.target.value);
+        // });
+        // form.addEventListener('submit',function (receiving) {
+        //   receiving.preventDefault();
+        // alert('Form has been Submitted successfully ! ');
+          
+        // });
+
+
+        document.getElementById('changeColor').addEventListener('click', function () {
+          const container = document.getElementById('container');
+          const colors = ['hotpink','blue','red','green','yellow'];
+          const randomColor = colors[Math.floor(Math.random() * colors.length )];
+          container.style.backgroundColor = randomColor  ;
+        }) 
+
+//         const main = document.getElementById('changeColor');
+// main.addEventListener('click', function() {
+//     const box = document.getElementById('box');
+//     const colors = ['red', 'green', 'pink', 'yellow'];
+//     const randomColor = colors[Math.floor(Math.random() * colors.length)];
+//     console.log(randomColor);
+    
+//     box.style.backgroundColor = randomColor;
+
+// });
+
+document.querySelectorAll('.box').classList.add('fade-in');
+element.addEventListener('animationend', () => element.classList.remove('fade-in'));
+
+
+// const div = document.createElement('div');
+// parent.appendChild(div);
+// div.remove();
+    </script>
+    <script  src="script.js"></script>
+
+    </body>
+</html>
+

@@ -1,0 +1,26 @@
+
+
+.swiper{
+  width: 100%;
+  margin: 20px 0px;
+
+}
+
+.swiper-wrapper{
+
+height: 200px;
+border-radius: 10px;
+
+}
+.swiper-slide{
+display: flex;
+justify-content: center;
+align-items: center;
+background: linear-gradient(45deg, hotpink, beige, rgb(14, 171, 233));
+
+color: rgb(15, 199, 21);
+}
+
+.swiper-button-prev, .swiper-button-next{
+  color: rgb(57, 11, 242);
+}

@@ -1,0 +1,31 @@
+h1{
+  background-color: #667eea;
+color: white;
+}
+
+.background{
+padding: 10px ;
+background: linear-gradient(45deg , hotpink , beige, rgb(51, 249, 51));
+text-align: center;
+color: white;
+border-radius: 10px;
+}
+
+#container{
+  width: 200px;
+  height: 150px;
+  background-color: #667eea;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+.box{
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(45deg, rgb(209, 9, 109),beige, rgb(9, 223, 9)) ;
+  border-radius: 10px;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.fade-in { animation: fadeIn 2s ease; }
