@@ -7,13 +7,24 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".swiper-button-prev",
   },
 
-  autoplay: {
-    delay: 1000, // Time in ms before switching (3 seconds)
-  },
+  // autoplay: {
+  //   delay: 1000, // Time in ms before switching (3 seconds)
+  // },
+
   pagination: {
     el: ".swiper-pagination",
     clickable: true, // Allows users to click dots to jump to a slide
   },
   effect: "fade", // or 'cube', 'coverflow', 'flip', 'creative'
   fadeEffect: { crossFade: true },
+});
+
+const nextPage = document.querySelector('.next-page');
+const goBack = document.querySelector('.go-back');
+
+nextPage.addEventListener('click', () => {
+  swiper.slideNext();
+});
+goBack.addEventListener('click', () => {
+  swiper.slidePrev();
 });

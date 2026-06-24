@@ -28,3 +28,17 @@ color: rgb(15, 199, 21);
 .swiper-button-prev, .swiper-button-next{
   color: rgb(57, 11, 242);
 }
+.extra{
+  padding: 10px 20px ;
+font-weight: bolder;
+background: linear-gradient(to bottom , rgb(231, 106, 106), rgb(13, 181, 248), rgb(9, 233, 9));
+border:none;
+border-radius: 15px;
+}
+.extra:hover{
+  opacity: 0.8;
+}
+.extra:active{
+  opacity: 0.1;
+
+}
