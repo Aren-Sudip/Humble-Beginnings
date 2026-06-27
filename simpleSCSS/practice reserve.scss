@@ -1,0 +1,64 @@
+@use "sass:color";
+
+$primary-color:  linear-gradient(45deg, hotpink, beige, rgb(14, 171, 233));
+$secondary-color: rgb(15, 199, 21);
+$tertiary-color: linear-gradient(to bottom , rgb(231, 106, 106), rgb(13, 181, 248), rgb(9, 233, 9));
+$arrow-color:  rgb(57, 11, 242);
+$padding-extra: 10px 20px;
+$extra-hover-opacity: 0.8;
+$extra-active-opacity: 0.1;
+$swiper-fs: 1.5rem;
+$swiper-fw: bold;
+$extra-fw: bolder;
+$swiper-margin: 20px 0px;
+$swiper-br: 10px;
+$extra-br: 15px;
+
+//variables:
+
+
+@mixin flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+@mixin button-styles {
+background: $tertiary-color;
+padding: $padding-extra;
+font-weight: $extra-fw;
+border: none;
+border-radius: $extra-br;
+}
+
+
+.swiper{
+  width: 100%;
+  margin: $swiper-margin;
+   &-wrapper{
+    height: 200px;
+    border-radius: $swiper-br;
+   }
+   &-slide{
+    @include flex-center();
+    background: $primary-color;
+    font-size: $swiper-fs;
+    font-weight: $swiper-fw;
+    color: $secondary-color;
+    border-radius: $swiper-br;
+   }
+   &-button-prev,&-button-next{
+    color: $arrow-color;
+   }
+}
+
+.extra{
+@include button-styles();
+
+&:hover{
+  opacity: $extra-hover-opacity;
+}
+&:active{
+  opacity: $extra-active-opacity;
+}
+}

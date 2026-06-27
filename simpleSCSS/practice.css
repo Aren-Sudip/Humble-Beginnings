@@ -1,0 +1,37 @@
+.swiper {
+  width: 100%;
+  margin: 20px 0px;
+}
+.swiper-wrapper {
+  height: 200px;
+  border-radius: 10px;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, hotpink, beige, rgb(14, 171, 233));
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(15, 199, 21);
+  border-radius: 10px;
+}
+.swiper-button-prev, .swiper-button-next {
+  color: rgb(57, 11, 242);
+}
+
+.extra {
+  background: linear-gradient(to bottom, rgb(231, 106, 106), rgb(13, 181, 248), rgb(9, 233, 9));
+  padding: 10px 20px;
+  font-weight: bolder;
+  border: none;
+  border-radius: 15px;
+}
+.extra:hover {
+  opacity: 0.8;
+}
+.extra:active {
+  opacity: 0.1;
+}
+
+/*# sourceMappingURL=practice.css.map */

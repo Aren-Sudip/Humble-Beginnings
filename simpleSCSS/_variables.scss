@@ -1,0 +1,15 @@
+@use "sass:color";
+
+$primary-color:  linear-gradient(45deg, hotpink, beige, rgb(14, 171, 233));
+$secondary-color: rgb(15, 199, 21);
+$tertiary-color: linear-gradient(to bottom , rgb(231, 106, 106), rgb(13, 181, 248), rgb(9, 233, 9));
+$arrow-color:  rgb(57, 11, 242);
+$padding-extra: 10px 20px;
+$extra-hover-opacity: 0.8;
+$extra-active-opacity: 0.1;
+$swiper-fs: 1.5rem;
+$swiper-fw: bold;
+$extra-fw: bolder;
+$swiper-margin: 20px 0px;
+$swiper-br: 10px;
+$extra-br: 15px;

@@ -20,8 +20,8 @@ background: linear-gradient(45deg, hotpink, beige, rgb(14, 171, 233));
 font-size: 1.5rem;
 font-weight: bold;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-letter-spacing: 1.2px;
 
+border-radius: 10px;
 color: rgb(15, 199, 21);
 }
 

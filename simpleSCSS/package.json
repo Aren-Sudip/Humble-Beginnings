@@ -1,0 +1,19 @@
+{
+  "name": "simplescss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "practice.js",
+  "scripts": {
+    "build": "sass practice.scss practice.css",
+    "watch": "sass --watch practice.scss:practice.css",
+    "dev": "concurrently \"sass --watch practice.scss:practice.css\" \"python3 -m http.server 8000\"",
+
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^10.0.3",
+    "sass": "^1.101.0"
+  }
+}
