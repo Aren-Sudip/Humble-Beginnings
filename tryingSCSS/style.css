@@ -1,0 +1,32 @@
+#click-btn {
+  background-color: rgb(31, 131, 253);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+#click-btn:hover {
+  background-color: rgb(7, 50, 103);
+}
+
+.swiper {
+  width: 100%;
+  margin: 20px 0px;
+}
+.swiper-wrapper {
+  height: 100px;
+  border-radius: 10px;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #667eea;
+  color: white;
+}
+.swiper-button-prev, .swiper-button-next {
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

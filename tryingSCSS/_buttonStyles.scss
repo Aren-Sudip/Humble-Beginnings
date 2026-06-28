@@ -1,0 +1,9 @@
+@use "variables" as *;
+@use "mixin" as *;
+
+#click-btn{
+  @include button-style;
+   &:hover{
+    background-color: $primary-hover;
+   }
+}

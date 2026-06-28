@@ -1,0 +1,25 @@
+@use "variables" as *;
+@use "mixin" as *;
+
+.swiper{
+ 
+  width: 100%;
+  margin: $swiper-margin;
+
+
+
+&-wrapper{
+height: 100px;
+border-radius: $swiper-br;
+}
+
+&-slide{
+   @include flex-center;
+background-color: $secondary-color;
+  color: white;
+}
+
+&-button-prev, &-button-next{
+  color: white;
+}
+}

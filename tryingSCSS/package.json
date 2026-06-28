@@ -1,0 +1,18 @@
+{
+  "name": "tryingscss",
+  "version": "1.0.0",
+  "description": "trying SCSS",
+  "main": "script.js",
+  "scripts": {
+    "build-css": "sass style.scss style.css",
+    "watch-css": "sass --watch style.scss:style.css",
+    "dev": "concurrently \"sass --watch style.scss:style.css\" \"python3 -m http.server 8000\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^10.0.3",
+    "sass": "^1.101.0"
+  }
+}

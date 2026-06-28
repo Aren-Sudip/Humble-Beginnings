@@ -1,0 +1,16 @@
+@use "variables" as *;
+
+@mixin button-style{
+  background-color: $primary-color;
+  color: white;
+  border: none;
+  border-radius: $button-br;
+  padding: $button-padding;
+  cursor: pointer;
+}
+@mixin flex-center{
+    display: flex;
+  justify-content: center;
+align-items: center;
+
+}
